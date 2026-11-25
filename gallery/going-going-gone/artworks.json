@@ -1,0 +1,218 @@
+[
+ {
+  "id": "b0",
+  "group": "Renaissance",
+  "title": "Mona Leonarda",
+  "artist": "Leonardo da Vinci"
+ },
+ {
+  "id": "b1",
+  "group": "Renaissance",
+  "title": "Nail-Filing Slave",
+  "artist": "Michelangelo Buonarroti"
+ },
+ {
+  "id": "b2",
+  "group": "Renaissance",
+  "title": "The Manifestation of the Tomato (in Italy)",
+  "artist": "Sandro Botticelli"
+ },
+ {
+  "id": "b3",
+  "group": "Renaissance",
+  "title": "The Poker Game",
+  "artist": "Sofonisba Anguissola"
+ },
+ {
+  "id": "b4",
+  "group": "Baroque",
+  "title": "Really Sick Bacchus",
+  "artist": "Michelangelo Merisi da Caravaggio"
+ },
+ {
+  "id": "b5",
+  "group": "Baroque",
+  "title": "Judith Shampooing Holofernes",
+  "artist": "Artemisia Gentileschi"
+ },
+ {
+  "id": "b6",
+  "group": "Baroque",
+  "title": "The Apoplectic Cavalier",
+  "artist": "Frans Hals"
+ },
+ {
+  "id": "b7",
+  "group": "Baroque",
+  "title": "The Turkey Dinner of Dr Tulp",
+  "artist": "Rembrandt van Rijn"
+ },
+ {
+  "id": "b8",
+  "group": "Impressionism",
+  "title": "Haystacks",
+  "artist": "Claude Monet"
+ },
+ {
+  "id": "b9",
+  "group": "Impressionism",
+  "title": "Mon déjeuner sur l'herbe",
+  "artist": "Berthe Morisot"
+ },
+ {
+  "id": "b10",
+  "group": "Impressionism",
+  "title": "Ear",
+  "artist": "Vincent Van Gogh"
+ },
+ {
+  "id": "b11",
+  "group": "Impressionism",
+  "title": "Pastorales Tahitiennes",
+  "artist": "Paul Gauguin"
+ },
+ {
+  "id": "b12",
+  "group": "Modernism",
+  "title": "The Uncontrollable Giggle",
+  "artist": "Edvard Munch"
+ },
+ {
+  "id": "b13",
+  "group": "Modernism",
+  "title": "A Rose Is a Rose Is a Rose Is a Rose",
+  "artist": "Georgia O'Keeffe"
+ },
+ {
+  "id": "b14",
+  "group": "Modernism",
+  "title": "American Goths",
+  "artist": "Grant Wood"
+ },
+ {
+  "id": "b15",
+  "group": "Modernism",
+  "title": "Times Square Traffic Jam",
+  "artist": "Piet Mondrian"
+ },
+ {
+  "id": "b16",
+  "group": "Surrealism",
+  "title": "Eating Gypsy",
+  "artist": "Le Douanier Rousseau"
+ },
+ {
+  "id": "b17",
+  "group": "Surrealism",
+  "title": "Ceci est une cigarette",
+  "artist": "René Magritte"
+ },
+ {
+  "id": "b18",
+  "group": "Surrealism",
+  "title": "Le burger en fourrure",
+  "artist": "Meret Oppenheim"
+ },
+ {
+  "id": "b19",
+  "group": "Surrealism",
+  "title": "Self-Portrait with Beehive",
+  "artist": "Frida Kahlo"
+ },
+ {
+  "id": "b20",
+  "group": "Pop",
+  "title": "Lady Gaga",
+  "artist": "Andy Warhol"
+ },
+ {
+  "id": "b21",
+  "group": "Pop",
+  "title": "I'm Just Transferring You.",
+  "artist": "Roy Lichtenstein"
+ },
+ {
+  "id": "b22",
+  "group": "Pop",
+  "title": "Untitled Film Still #5022",
+  "artist": "Cindy Sherman"
+ },
+ {
+  "id": "b23",
+  "group": "Pop",
+  "title": "You Just Stepped On My Toe",
+  "artist": "Barbara Kruger"
+ },
+ {
+  "id": "b24",
+  "group": "Installation",
+  "title": "Papa",
+  "artist": "Louise Bourgeois"
+ },
+ {
+  "id": "b25",
+  "group": "Installation",
+  "title": "All the Eternal Love I Have for Aubergines",
+  "artist": "Yayoi Kusama"
+ },
+ {
+  "id": "b26",
+  "group": "Installation",
+  "title": "How to Explain Pictures to a Dead Man",
+  "artist": "Josef Beuys"
+ },
+ {
+  "id": "b27",
+  "group": "Installation",
+  "title": "Present",
+  "artist": "Christo and Jeanne-Claude"
+ },
+ {
+  "id": "b28",
+  "group": "Contemporary",
+  "title": "The Artist Is Living in Your Home",
+  "artist": "Marina Abramović"
+ },
+ {
+  "id": "b29",
+  "group": "Contemporary",
+  "title": "Little Big Pony",
+  "artist": "Jeff Koons"
+ },
+ {
+  "id": "b30",
+  "group": "Contemporary",
+  "title": "The Essential Saltiness of the Pickling Process in the Mind of the Consumer",
+  "artist": "Damien Hirst"
+ },
+ {
+  "id": "b31",
+  "group": "Contemporary",
+  "title": "Every Pillow I Have Ever Slept With",
+  "artist": "Tracey Emin"
+ },
+ {
+  "id": "b32",
+  "group": "Graffiti",
+  "title": "My Homepage",
+  "artist": "Jean-Michel Basquiat"
+ },
+ {
+  "id": "b33",
+  "group": "Graffiti",
+  "title": "Self-Portrait",
+  "artist": "Banksy"
+ },
+ {
+  "id": "b34",
+  "group": "Graffiti",
+  "title": "Pop Plane",
+  "artist": "Keith Haring"
+ },
+ {
+  "id": "b35",
+  "group": "Graffiti",
+  "title": "Don't Mess with Missy",
+  "artist": "Miss Van"
+ }
+]

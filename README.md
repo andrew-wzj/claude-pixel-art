@@ -2,6 +2,10 @@
 
 Teaching Claude to make good pixel art in code.
 
+**Rate the art:** https://andrew-wzj.github.io/claude-pixel-art/ shows v1 and v2 of all 36 artworks side by side.
+Click **Rate** under any artwork to score it with a short GitHub issue form.
+给作品打分：打开上面的画廊，点每幅画下面的"打分"按钮。
+
 ## Why
 
 Claude's first attempt (36 illustrations for the Going, Going, Gone! game page) used rough geometric shapes and
@@ -34,11 +38,11 @@ better.
 
 36 parody artworks for an art-auction board game, drawn in code at 64×48.
 
-- `gallery/going-going-gone/v1/pixart.js`: the first attempt, as shipped.
+- `gallery/going-going-gone/v1/pixart.js`: the first attempt, as shipped. Single images are in `v1/png/`.
 - `gallery/going-going-gone/v2/pixart.js`: redrawn with the lessons above. Each shape goes into a mask and is
   painted with a 5-step ramp (outline, shadow, base, light, highlight). The light comes from the top-left and
   the shading follows the shape's own outline. Backgrounds use clean colour bands with no dithering, and
-  shapes have no random speckle.
+  shapes have no random speckle. Single images are in `v2/png/`.
 
 Left: v1. Right: v2.
 
@@ -53,3 +57,9 @@ Re-render: `node tools/render.mjs --compare gallery/going-going-gone/v1/pixart.j
 - Figures are still blocky mannequins. Faces, hands and poses need hand-placed pixels, not ellipses.
 - Auto-shading makes every object look equally "puffy". Real pixel art chooses where the form turns.
 - Flat graphic pieces (Warhol, Haring, Mondrian, Basquiat) barely changed, because flat is the right style for them.
+
+## Repo layout
+
+- `index.html`: the rating gallery, built by `node tools/build-site.mjs` from `gallery/*/artworks.json`.
+- `.github/ISSUE_TEMPLATE/rate.yml`: the rating form, built by the same script.
+- `tools/render.mjs`: renders a `pixart.js` file to PNGs, or v1/v2 comparison sheets.

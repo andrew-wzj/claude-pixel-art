@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Pixel Art: rate v1 vs v2</title>
+<style>
+:root{--bg:#15151c;--card:#1f1f29;--ink:#ecebf2;--muted:#a3a1b3;--line:#33334a;--accent:#f6b13c}
+@media (prefers-color-scheme: light){:root{--bg:#f4f2ee;--card:#fff;--ink:#1d1b22;--muted:#5d5a66;--line:#ddd8cf;--accent:#b86a00}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header,main{max-width:1180px;margin:0 auto;padding:0 20px}
+header{padding-top:40px;padding-bottom:12px}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .4rem;letter-spacing:-.01em}
+header p{color:var(--muted);max-width:70ch;margin:.3rem 0}
+header a{color:var(--accent)}
+h2{grid-column:1/-1;margin:28px 0 0;font-size:1.25rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:16px;padding-bottom:60px}
+article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+figure{margin:0}
+img{width:100%;height:auto;display:block;image-rendering:pixelated;border-radius:6px}
+figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px}
+h3{margin:0;font-size:1.05rem}
+.meta p{margin:0;color:var(--muted);font-size:.9rem}
+.rate{flex:none;background:var(--accent);color:#1d1b22;text-decoration:none;font-weight:700;padding:8px 14px;border-radius:8px}
+.rate:hover{filter:brightness(1.1)}
+.rate:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Can Claude learn pixel art? Rate v1 vs v2</h1>
+  <p>Claude drew these 36 parody artworks in code, at 64×48 pixels. <strong>v1</strong> was its first try. <strong>v2</strong> was redrawn after studying how good pixel art is made. Tell us which is better: click <strong>Rate</strong> under any artwork. Rating needs a GitHub account.</p>
+  <p>Claude 用代码画了这 36 幅恶搞名画（64×48 像素）。<strong>v1</strong> 是第一次尝试，<strong>v2</strong> 是学习像素画技法之后重画的。点每幅画下面的 <strong>打分</strong> 按钮，告诉我们哪一版更好（需要 GitHub 账号）。</p>
+  <p><a href="https://github.com/andrew-wzj/claude-pixel-art">Source and notes on GitHub / 源代码与学习笔记</a></p>
+</header>
+<main>
+<h2>Renaissance</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b0.png" alt="Mona Leonarda, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b0.png" alt="Mona Leonarda, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Mona Leonarda</h3><p>Leonardo da Vinci (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Mona%20Leonarda&artwork=b0%20%C2%B7%20Mona%20Leonarda" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b1.png" alt="Nail-Filing Slave, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b1.png" alt="Nail-Filing Slave, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Nail-Filing Slave</h3><p>Michelangelo Buonarroti (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Nail-Filing%20Slave&artwork=b1%20%C2%B7%20Nail-Filing%20Slave" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b2.png" alt="The Manifestation of the Tomato (in Italy), v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b2.png" alt="The Manifestation of the Tomato (in Italy), v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Manifestation of the Tomato (in Italy)</h3><p>Sandro Botticelli (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Manifestation%20of%20the%20Tomato%20(in%20Italy)&artwork=b2%20%C2%B7%20The%20Manifestation%20of%20the%20Tomato%20(in%20Italy)" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b3.png" alt="The Poker Game, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b3.png" alt="The Poker Game, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Poker Game</h3><p>Sofonisba Anguissola (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Poker%20Game&artwork=b3%20%C2%B7%20The%20Poker%20Game" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Baroque</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b4.png" alt="Really Sick Bacchus, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b4.png" alt="Really Sick Bacchus, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Really Sick Bacchus</h3><p>Michelangelo Merisi da Caravaggio (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Really%20Sick%20Bacchus&artwork=b4%20%C2%B7%20Really%20Sick%20Bacchus" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b5.png" alt="Judith Shampooing Holofernes, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b5.png" alt="Judith Shampooing Holofernes, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Judith Shampooing Holofernes</h3><p>Artemisia Gentileschi (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Judith%20Shampooing%20Holofernes&artwork=b5%20%C2%B7%20Judith%20Shampooing%20Holofernes" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b6.png" alt="The Apoplectic Cavalier, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b6.png" alt="The Apoplectic Cavalier, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Apoplectic Cavalier</h3><p>Frans Hals (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Apoplectic%20Cavalier&artwork=b6%20%C2%B7%20The%20Apoplectic%20Cavalier" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b7.png" alt="The Turkey Dinner of Dr Tulp, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b7.png" alt="The Turkey Dinner of Dr Tulp, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Turkey Dinner of Dr Tulp</h3><p>Rembrandt van Rijn (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Turkey%20Dinner%20of%20Dr%20Tulp&artwork=b7%20%C2%B7%20The%20Turkey%20Dinner%20of%20Dr%20Tulp" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Impressionism</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b8.png" alt="Haystacks, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b8.png" alt="Haystacks, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Haystacks</h3><p>Claude Monet (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Haystacks&artwork=b8%20%C2%B7%20Haystacks" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b9.png" alt="Mon déjeuner sur l'herbe, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b9.png" alt="Mon déjeuner sur l'herbe, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Mon déjeuner sur l'herbe</h3><p>Berthe Morisot (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Mon%20d%C3%A9jeuner%20sur%20l'herbe&artwork=b9%20%C2%B7%20Mon%20d%C3%A9jeuner%20sur%20l'herbe" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b10.png" alt="Ear, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b10.png" alt="Ear, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Ear</h3><p>Vincent Van Gogh (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Ear&artwork=b10%20%C2%B7%20Ear" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b11.png" alt="Pastorales Tahitiennes, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b11.png" alt="Pastorales Tahitiennes, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Pastorales Tahitiennes</h3><p>Paul Gauguin (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Pastorales%20Tahitiennes&artwork=b11%20%C2%B7%20Pastorales%20Tahitiennes" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Modernism</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b12.png" alt="The Uncontrollable Giggle, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b12.png" alt="The Uncontrollable Giggle, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Uncontrollable Giggle</h3><p>Edvard Munch (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Uncontrollable%20Giggle&artwork=b12%20%C2%B7%20The%20Uncontrollable%20Giggle" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b13.png" alt="A Rose Is a Rose Is a Rose Is a Rose, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b13.png" alt="A Rose Is a Rose Is a Rose Is a Rose, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>A Rose Is a Rose Is a Rose Is a Rose</h3><p>Georgia O'Keeffe (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20A%20Rose%20Is%20a%20Rose%20Is%20a%20Rose%20Is%20a%20Rose&artwork=b13%20%C2%B7%20A%20Rose%20Is%20a%20Rose%20Is%20a%20Rose%20Is%20a%20Rose" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b14.png" alt="American Goths, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b14.png" alt="American Goths, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>American Goths</h3><p>Grant Wood (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20American%20Goths&artwork=b14%20%C2%B7%20American%20Goths" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b15.png" alt="Times Square Traffic Jam, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b15.png" alt="Times Square Traffic Jam, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Times Square Traffic Jam</h3><p>Piet Mondrian (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Times%20Square%20Traffic%20Jam&artwork=b15%20%C2%B7%20Times%20Square%20Traffic%20Jam" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Surrealism</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b16.png" alt="Eating Gypsy, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b16.png" alt="Eating Gypsy, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Eating Gypsy</h3><p>Le Douanier Rousseau (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Eating%20Gypsy&artwork=b16%20%C2%B7%20Eating%20Gypsy" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b17.png" alt="Ceci est une cigarette, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b17.png" alt="Ceci est une cigarette, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Ceci est une cigarette</h3><p>René Magritte (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Ceci%20est%20une%20cigarette&artwork=b17%20%C2%B7%20Ceci%20est%20une%20cigarette" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b18.png" alt="Le burger en fourrure, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b18.png" alt="Le burger en fourrure, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Le burger en fourrure</h3><p>Meret Oppenheim (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Le%20burger%20en%20fourrure&artwork=b18%20%C2%B7%20Le%20burger%20en%20fourrure" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b19.png" alt="Self-Portrait with Beehive, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b19.png" alt="Self-Portrait with Beehive, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Self-Portrait with Beehive</h3><p>Frida Kahlo (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Self-Portrait%20with%20Beehive&artwork=b19%20%C2%B7%20Self-Portrait%20with%20Beehive" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Pop</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b20.png" alt="Lady Gaga, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b20.png" alt="Lady Gaga, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Lady Gaga</h3><p>Andy Warhol (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Lady%20Gaga&artwork=b20%20%C2%B7%20Lady%20Gaga" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b21.png" alt="I'm Just Transferring You., v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b21.png" alt="I'm Just Transferring You., v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>I'm Just Transferring You.</h3><p>Roy Lichtenstein (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20I'm%20Just%20Transferring%20You.&artwork=b21%20%C2%B7%20I'm%20Just%20Transferring%20You." target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b22.png" alt="Untitled Film Still #5022, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b22.png" alt="Untitled Film Still #5022, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Untitled Film Still #5022</h3><p>Cindy Sherman (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Untitled%20Film%20Still%20%235022&artwork=b22%20%C2%B7%20Untitled%20Film%20Still%20%235022" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b23.png" alt="You Just Stepped On My Toe, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b23.png" alt="You Just Stepped On My Toe, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>You Just Stepped On My Toe</h3><p>Barbara Kruger (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20You%20Just%20Stepped%20On%20My%20Toe&artwork=b23%20%C2%B7%20You%20Just%20Stepped%20On%20My%20Toe" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Installation</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b24.png" alt="Papa, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b24.png" alt="Papa, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Papa</h3><p>Louise Bourgeois (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Papa&artwork=b24%20%C2%B7%20Papa" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b25.png" alt="All the Eternal Love I Have for Aubergines, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b25.png" alt="All the Eternal Love I Have for Aubergines, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>All the Eternal Love I Have for Aubergines</h3><p>Yayoi Kusama (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20All%20the%20Eternal%20Love%20I%20Have%20for%20Aubergines&artwork=b25%20%C2%B7%20All%20the%20Eternal%20Love%20I%20Have%20for%20Aubergines" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b26.png" alt="How to Explain Pictures to a Dead Man, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b26.png" alt="How to Explain Pictures to a Dead Man, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>How to Explain Pictures to a Dead Man</h3><p>Josef Beuys (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20How%20to%20Explain%20Pictures%20to%20a%20Dead%20Man&artwork=b26%20%C2%B7%20How%20to%20Explain%20Pictures%20to%20a%20Dead%20Man" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b27.png" alt="Present, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b27.png" alt="Present, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Present</h3><p>Christo and Jeanne-Claude (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Present&artwork=b27%20%C2%B7%20Present" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Contemporary</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b28.png" alt="The Artist Is Living in Your Home, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b28.png" alt="The Artist Is Living in Your Home, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Artist Is Living in Your Home</h3><p>Marina Abramović (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Artist%20Is%20Living%20in%20Your%20Home&artwork=b28%20%C2%B7%20The%20Artist%20Is%20Living%20in%20Your%20Home" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b29.png" alt="Little Big Pony, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b29.png" alt="Little Big Pony, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Little Big Pony</h3><p>Jeff Koons (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Little%20Big%20Pony&artwork=b29%20%C2%B7%20Little%20Big%20Pony" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b30.png" alt="The Essential Saltiness of the Pickling Process in the Mind of the Consumer, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b30.png" alt="The Essential Saltiness of the Pickling Process in the Mind of the Consumer, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>The Essential Saltiness of the Pickling Process in the Mind of the Consumer</h3><p>Damien Hirst (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20The%20Essential%20Saltiness%20of%20the%20Pickling%20Process%20in%20the%20Mind%20of%20the%20Consumer&artwork=b30%20%C2%B7%20The%20Essential%20Saltiness%20of%20the%20Pickling%20Process%20in%20the%20Mind%20of%20the%20Consumer" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b31.png" alt="Every Pillow I Have Ever Slept With, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b31.png" alt="Every Pillow I Have Ever Slept With, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Every Pillow I Have Ever Slept With</h3><p>Tracey Emin (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Every%20Pillow%20I%20Have%20Ever%20Slept%20With&artwork=b31%20%C2%B7%20Every%20Pillow%20I%20Have%20Ever%20Slept%20With" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<h2>Graffiti</h2><article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b32.png" alt="My Homepage, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b32.png" alt="My Homepage, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>My Homepage</h3><p>Jean-Michel Basquiat (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20My%20Homepage&artwork=b32%20%C2%B7%20My%20Homepage" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b33.png" alt="Self-Portrait, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b33.png" alt="Self-Portrait, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Self-Portrait</h3><p>Banksy (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Self-Portrait&artwork=b33%20%C2%B7%20Self-Portrait" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b34.png" alt="Pop Plane, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b34.png" alt="Pop Plane, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Pop Plane</h3><p>Keith Haring (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Pop%20Plane&artwork=b34%20%C2%B7%20Pop%20Plane" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+<article>
+  <div class="pair">
+    <figure><img src="gallery/going-going-gone/v1/png/b35.png" alt="Don't Mess with Missy, v1" loading="lazy" width="384" height="288"><figcaption>v1 · old / 旧版</figcaption></figure>
+    <figure><img src="gallery/going-going-gone/v2/png/b35.png" alt="Don't Mess with Missy, v2" loading="lazy" width="384" height="288"><figcaption>v2 · new / 新版</figcaption></figure>
+  </div>
+  <div class="meta"><div><h3>Don't Mess with Missy</h3><p>Miss Van (parody)</p></div>
+  <a class="rate" href="https://github.com/andrew-wzj/claude-pixel-art/issues/new?template=rate.yml&title=%5BRating%5D%20Don't%20Mess%20with%20Missy&artwork=b35%20%C2%B7%20Don't%20Mess%20with%20Missy" target="_blank" rel="noopener">Rate / 打分</a></div>
+</article>
+</main>
+</body>
+</html>
