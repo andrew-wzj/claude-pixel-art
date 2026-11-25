@@ -29,3 +29,27 @@ better.
 6. **Lines and light, not flat fills.** Build with 1 px rims and outlines. Big flat areas of saturated color are
    almost always wrong.
 7. **Benchmark against a better piece** at the same size. If it has more detail, light or life, yours isn't done.
+
+## Gallery: Going, Going, Gone! (v1 → v2)
+
+36 parody artworks for an art-auction board game, drawn in code at 64×48.
+
+- `gallery/going-going-gone/v1/pixart.js`: the first attempt, as shipped.
+- `gallery/going-going-gone/v2/pixart.js`: redrawn with the lessons above. Each shape goes into a mask and is
+  painted with a 5-step ramp (outline, shadow, base, light, highlight). The light comes from the top-left and
+  the shading follows the shape's own outline. Backgrounds use clean colour bands with no dithering, and
+  shapes have no random speckle.
+
+Left: v1. Right: v2.
+
+![compare 1](gallery/going-going-gone/compare/compare-1.png)
+![compare 2](gallery/going-going-gone/compare/compare-2.png)
+![compare 3](gallery/going-going-gone/compare/compare-3.png)
+
+Re-render: `node tools/render.mjs --compare gallery/going-going-gone/v1/pixart.js gallery/going-going-gone/v2/pixart.js gallery/going-going-gone/compare --titles gallery/going-going-gone/titles.json`
+
+### What v2 still gets wrong
+
+- Figures are still blocky mannequins. Faces, hands and poses need hand-placed pixels, not ellipses.
+- Auto-shading makes every object look equally "puffy". Real pixel art chooses where the form turns.
+- Flat graphic pieces (Warhol, Haring, Mondrian, Basquiat) barely changed, because flat is the right style for them.
